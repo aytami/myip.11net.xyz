@@ -1,0 +1,65 @@
+<div id="ipLookup"></div>
+<script>
+ function getIP(json) {
+   if (json.country && json.city) {
+    var div = document.getElementById('ipLookup');
+    div.innerHTML='Login from '+json.query+': '+json.city+', '+json.country+'';
+   }
+  }
+</script>
+<script src="//extreme-ip-lookup.com/json/?callback=getIP" async defer></script>
+
+
+<table>
+<thead>
+<tr>
+<th><p>User Active</p></th>
+<th><p>Expired Date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p id="demo"></p></td>
+<td><span id="daate"></span></td>
+</tr>
+</tbody>
+</table>
+<!-- Display the countdown timer in an element -->
+
+
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Aug 28, 2020 23:59:00").getTime();
+{
+var msec = Date.parse("Aug/28/2020/23:59");
+var d = new Date(msec);
+document.getElementById("daate").innerHTML = d;
+}
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "day " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
