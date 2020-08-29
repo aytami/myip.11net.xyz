@@ -209,4 +209,20 @@
                 font-size: 0.8em; /* 12.8 px */
             }
         }
-    
+#progressBar{
+		width:90%;
+		height:0.3em;
+		background-color:#EEEEEE;
+		position:relative;
+		display:block;
+		margin:0 auto;
+		margin-bottom:2em;
+	}
+	#progress{
+		position:absolute;
+		top:0; left:0;
+		height:100%;
+		width:0%;
+		transition: width 2s;
+		background-color:#90BBFF;
+	}   

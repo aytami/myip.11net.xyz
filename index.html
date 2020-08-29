@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"/>
     <meta charset="UTF-8"/>
+    <title>Speedtest by Ara</title>
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400|Source+Sans+Pro:400,600">
     <script type="text/javascript" src="speedtest.js"></script>
@@ -23,11 +24,11 @@ function I(i) {
         var progColor = "#0ac9f7"; // sky-blue
         function setPageTitle() {
             var pageTitleDiv = document.getElementById('pageTitle');
-            var titlePrefixNode = document.createTextNode("You're currently using this server:");
+            var titlePrefixNode = document.createTextNode("ISP server host by:");
             var lineBreakElement = document.createElement('br');
             var locationNode = document.createTextNode('Unknown');
             switch (window.location.hostname) {
-                case 'us1.zzz.cat':
+                case 'speedtest.digi.com.my.prod.hosts.ooklaserver.net:8080':
                     locationNode.textContent = 'Unites States 1 (Fremont, Linode)';
                     break;
                 case 'us2.zzz.cat':
@@ -430,9 +431,9 @@ function I(i) {
 <div id="ipLookup"></div>
 <script>
  function getIP(json) {
-   if (json.country && json.city) {
+   if (json.country && json.city && json.region && json.org) {
     var div = document.getElementById('ipLookup');
-    div.innerHTML='Login from '+json.query+': '+json.city+', '+json.country+'';
+    div.innerHTML='Success Login from '+json.query+': '+json.city+', '+json.region+', '+json.org+', '+json.country+'';
    }
   }
 </script>
@@ -460,9 +461,9 @@ function I(i) {
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Aug 28, 2020 23:59:00").getTime();
+var countDownDate = new Date("Sep 02, 2020 23:59:00").getTime();
 {
-var msec = Date.parse("Aug/28/2020/23:59");
+var msec = Date.parse("Sep/02/2020/23:59");
 var d = new Date(msec);
 document.getElementById("daate").innerHTML = d;
 }
@@ -497,6 +498,7 @@ var x = setInterval(function() {
     <div id="startStopBtn" onclick="startStop()"></div>
     <br/>
     <div id="test">
+    <div id="progressBar"><div id="progress"></div></div>
         <div class="testGroup">
             <div class="testArea">
                 <div class="testName">Download</div>
