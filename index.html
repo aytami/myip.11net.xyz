@@ -24,7 +24,7 @@ function I(i) {
         var progColor = "#0ac9f7"; // sky-blue
         function setPageTitle() {
             var pageTitleDiv = document.getElementById('pageTitle');
-            var titlePrefixNode = document.createTextNode("ISP server host by:");
+            var titlePrefixNode = document.createTextNode("ISP Provider Server Host By:");
             var lineBreakElement = document.createElement('br');
             var locationNode = document.createTextNode('Unknown');
             switch (window.location.hostname) {
@@ -498,7 +498,7 @@ var x = setInterval(function() {
     <div id="startStopBtn" onclick="startStop()"></div>
     <br/>
     <div id="test">
-    <div id="progressBar"><div id="progress"></div></div>
+    <div id="progressBar" onclick="startStop()"><canvas id="dlMeter" class="meter"></div></div>
         <div class="testGroup">
             <div class="testArea">
                 <div class="testName">Download</div>
@@ -526,8 +526,8 @@ var x = setInterval(function() {
                 <div class="unit">ms</div>
             </div>
         </div>
-        <div id="ipArea">
-            <span id="ip"></span>
+        <div id="">
+            <span id=""></span>
         </div>
         <div><a class="privacy" href="#" onclick="I('privacyPolicy').style.display=''">Privacy</a></div>
         <div id="shareArea" style="display:none">
