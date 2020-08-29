@@ -3,11 +3,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"/>
     <meta charset="UTF-8"/>
-    <title>Speedtest by Ara</title>
+    
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:300,400|Source+Sans+Pro:400,600">
     <script type="text/javascript" src="speedtest.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src=""></script>
     <link rel="stylesheet" href="style.css">
 
     
@@ -498,8 +498,7 @@ var x = setInterval(function() {
     <div id="startStopBtn" onclick="startStop()"></div>
     <br/>
     <div id="test">
-    <div id="progressBar" onclick="startStop()"><canvas id="dlMeter" class="meter"></div></div>
-        <div class="testGroup">
+         <div class="testGroup">
             <div class="testArea">
                 <div class="testName">Download</div>
                 <canvas id="dlMeter" class="meter"></canvas>
@@ -526,13 +525,13 @@ var x = setInterval(function() {
                 <div class="unit">ms</div>
             </div>
         </div>
-        <div id="">
-            <span id=""></span>
+        <div id="ipArea">
+            <span id="ip"></span>
         </div>
         <div><a class="privacy" href="#" onclick="I('privacyPolicy').style.display=''">Privacy</a></div>
         <div id="shareArea" style="display:none">
             <h3>Share your results</h3>
-            <input type="text" value="" id="resultsURL" readonly="readonly"
+            <input type="text" value="" id="" readonly="readonly"
                    onclick="this.select();this.focus();this.select();document.execCommand('copy');alert('Link copied')"/>
             <img src="" id="resultsImg"/>
             <p>Test ID: <span id="testId"></span></p>
